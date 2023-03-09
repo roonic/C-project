@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     // check for number of command-line arguments
     if (argc != 3)
     {
-        printf("Usage: ./substitution [flag] file\n");
+        printf("Usage: ./main [flag] file\n   -s   --  Save your password\n   -v   --  View saved passwords\n");
         return 1;
     }
 
