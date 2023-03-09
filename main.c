@@ -56,10 +56,9 @@ int main(int argc, char *argv[])
         // get name and pass from the user
         printf("Name: ");
         scanf("%s", name);
-        // fgets(name, 50, stdin);
+
         printf("Password: ");
         scanf("%s", pass);
-        // fgets(pass, 50, stdin);
 
         key = rand_num();
 
