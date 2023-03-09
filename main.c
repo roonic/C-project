@@ -68,7 +68,6 @@ int main(int argc, char *argv[])
             encrypt(pass, key);
             fprintf(file, "%s,%s,%i\n", name, pass, key);
 
-            printf("%s %s\n", name, pass);
             printf("The information was successfully saves!");
             break;
 
