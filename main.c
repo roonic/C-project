@@ -17,17 +17,17 @@ int main(int argc, char *argv[])
 
     // Get flag and check validity
     char option = getopt(argc, argv, options);
-    if (option == '?')
+    if (option == '?') // a ko thau ma s
     {
         printf("Invalid option.\n");
         return 1;
     }
 
     // Ensure only one option
-    if (getopt(argc, argv, options) != -1)
+    if (getopt(argc, argv, options) != -1)// 
     {
         printf("Only one option allowed.\n");
-        return 2;
+        return 1;
     }
 
     // check for number of command-line arguments
@@ -55,10 +55,10 @@ int main(int argc, char *argv[])
 
         // get name and pass from the user
         printf("Name: ");
-        scanf("%s", name);
+        scanf("%[^\n]%*c", name);
 
         printf("Password: ");
-        scanf("%s", pass);
+        scanf("%[^\n]%*c", pass);
 
         key = rand_num();
 
